@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+body{
+    background-color: rgb(248, 244, 238);
+}
+:root{
+    --main-bg-color: #2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  "Fredoka", sans-serif;
+
+}
+header{
+    background: var(--main-bg-color);
+    font-family:  "Fredoka", sans-serif
+
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+/* .logo img{
+    
+
+} */
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 25px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+nav ul li a:hover{
+    font-weight: bold;
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+.slicer{
+    display: flex;
+    margin: 12px auto 30px auto;
+    height: 70vh;
+    justify-content: center;
+    overflow: hidden;
+
+
+}
+.slicer img{
+    width: 70vw;
+    height: 70vh;
+
+}
+.card{
+
+    margin: 30px auto;
+    max-width: 91vw;
+    background-color: white;
+
+
+
+}
+.card-item{
+    width: 12vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px 30px;
+    /* overflow: scroll; */
+
+}
+.card-item:hover{
+    width: 12vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px 30px;
+    transform: scale(1.1, 1.1);
+    background: rgb(211, 206, 206);
+    border: 1px solid black;
+
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh) ;
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family:  "Fredoka", sans-serif;
+}
+.cards{
+    display: flex;
+    overflow-x: scroll;
+}
